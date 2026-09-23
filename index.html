@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TechMart Price Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Croxxon</h1>
+
+    <div class="container">
+
+        <h2>Product Search</h2>
+
+        <div class="autocomplete">
+            <div class="search-box">
+                <span>🔍</span>
+                <input type="text" id="searchInput" placeholder="Search products..." autocomplete="off">
+            </div>
+
+            <div id="suggestions"></div>
+        </div>
+
+        <h2>Smart Price Finder</h2>
+
+        <div class="search">
+            <input type="number" id="price" placeholder="Enter target price">
+            <button onclick="searchPrice()">Search</button>
+        </div>
+
+        <h2>Find Products in Price Range</h2>
+
+        <div class="search">
+            <input type="number" id="minPrice" placeholder="Minimum price">
+            <input type="number" id="maxPrice" placeholder="Maximum price">
+            <button onclick="searchRange()">Find Products</button>
+        </div>
+
+        <div id="result"></div>
+
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
